@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Workshop App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tagline">Discover a range of workshops, apply in seconds, and take your skills to the next level. Join our community and start your learning journey today!</string>
+    <string name="welcome">Welcome!</string>
+    <string name="login">Log In</string>
+    <string name="create_an_account">Create An Account</string>
+    <string name="e_mail_address">E-mail Address</string>
+    <string name="password">Password</string>
+    <string name="txt_no_account_signup">Don\'t have an account? <font color="#2196F3">Register Now</font></string>
+    <string name="txt_already_account">Already have an account? <font color="#2196F3">Sign In</font></string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="user_account">User Account</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="discover">Discover</string>
+    <string name="user">User</string>
+    <string name="last_date_to_apply">Last Date to apply:</string>
+    <string name="workshop_details">Workshop Details:</string>
+    <string name="description">Description:</string>
+    <string name="applied">Applied...</string>
+    <string name="email_address">E-mail Address:</string>
+    <string name="apply_for_this_workshop">Apply for this workshop</string>
+</resources>

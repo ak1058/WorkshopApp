@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/dashboard" android:id="@+id/appliedMenu" android:icon="@drawable/dashboard" />
+    <item android:title="@string/discover" android:id="@+id/discoverMenu" android:icon="@drawable/discover_workshop"  />
+    <item android:title="@string/user" android:id="@+id/userMenu" android:icon="@drawable/user"  />
+
+</menu>

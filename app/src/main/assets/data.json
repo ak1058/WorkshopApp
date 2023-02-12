@@ -1,0 +1,186 @@
+[
+        {
+          "id": 1,
+          "name": "Web Development Workshop",
+          "date": "1 Mar",
+          "time": "10:00 AM to 12:00 PM",
+          "details": "This workshop is designed for students who are interested in learning the basics of web development. Topics covered include HTML, CSS, and JavaScript.",
+          "icon_link": "https://link-to-icon-2.jpg",
+          "instructor": "Raghav Aggarwal"
+        },
+        {
+          "id": 2,
+          "name": "Introduction to Machine Learning",
+          "date": "5 Mar",
+          "time": "02:00 PM to 04:00 PM",
+          "details": "In this workshop, students will learn the fundamentals of machine learning, including supervised and unsupervised learning, regression and classification.",
+          "instructor": "John Doe",
+          "icon_link": "https://link-to-icon-2.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Cybersecurity 101",
+          "date": "10 Mar",
+          "time": "10:00 AM to 12:00 PM",
+          "details": "This workshop will introduce students to the basics of cybersecurity, including network security, cryptography, and threat intelligence.",
+          "instructor": "Partham",
+          "icon_link": "https://link-to-icon-3.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Data Visualization with Python",
+          "date": "15 Mar",
+          "time": "02:00 PM to 04:00 PM",
+          "details": "This workshop will teach students how to use Python to visualize data and gain insights from it. Topics covered include plotting with Matplotlib and Seaborn, and data exploration.",
+          "instructor": "John Wick",
+          "icon_link": "https://link-to-icon-4.jpg"
+        },
+        {
+          "id": 5,
+          "name": "Introduction to Cloud Computing",
+          "date": "20 Mar",
+          "time": "10:00 AM to 12:00 PM",
+          "details": "This workshop will provide an overview of cloud computing, including its benefits, types of clouds, and the most popular cloud service providers.",
+          "instructor": "Philip Lackener",
+          "icon_link": "https://link-to-icon-5.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Full Stack Development with Node.js",
+          "date": "25 Mar",
+          "time": "02:00 PM to 04:00 PM",
+          "details": "In this workshop, students will learn how to build full-stack web applications using Node.js and Express. Topics covered include CRUD operations, authentication and authorization, and deployment.",
+          "instructor": "Suvesh Joshi",
+          "icon_link": "https://link-to-icon-5.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Digital Marketing Workshop",
+            "date": "30 Mar",
+            "time": "10:00 AM to 12:00 PM",
+            "details": "This workshop will provide an introduction to digital marketing, including search engine optimization (SEO), pay-per-click (PPC) advertising, and social media marketing.",
+            "instructor": "Lakshay Choudhary",
+            "icon_link": "https://link-to-icon-7.jpg"
+          },
+          {
+            "id": 8,
+            "name": "Game Development with Unity",
+            "date": "1 Apr",
+            "time": "02:00 PM to 04:00 PM",
+            "details": "In this workshop, students will learn how to develop games using Unity. Topics covered include the Unity Editor, scripting in C#, and publishing to various platforms.",
+            "instructor": "Aakash",
+            "icon_link": "https://link-to-icon-8.jpg"
+          },
+          {
+            "id": 9,
+            "name": "Blockchain Fundamentals",
+            "date": "5 Apr",
+            "time": "10:00 AM to 12:00 PM",
+            "details": "This workshop will provide an introduction to blockchain technology, including its history, use cases, and the difference between public and private blockchains.",
+            "instructor": "Nikhil Bhatnagar",
+            "icon_link": "https://link-to-icon-9.jpg"
+          },
+          {
+            "id": 10,
+            "name": "App Development with Flutter",
+            "date": "10 Apr",
+            "time": "02:00 PM to 04:00 PM",
+            "details": "In this workshop, students will learn how to build mobile apps using Flutter. Topics covered include the Flutter widget tree, animation, and deployment to the App Store.",
+            "instructor": "Akay",
+            "icon_link": "https://link-to-icon-10.jpg"
+          },
+          {
+            "id": 11,
+            "name": "Introduction to Artificial Intelligence",
+            "date": "15 Apr",
+            "time": "10:00 AM to 12:00 PM",
+            "details": "This workshop will provide an overview of artificial intelligence, including its history, applications, and the difference between narrow and general AI.",
+            "instructor": "Lovish Aggarwal",
+            "icon_link": "https://link-to-icon-11.jpg"
+          },
+          {
+            "id": 12,
+            "name": "Product Management Workshop",
+            "date": "20 Apr",
+            "time": "02:00 PM to 04:00 PM",
+            "details": "In this workshop, students will learn the basics of product management, including product discovery, product definition, and product launch.",
+            "instructor": "Lokesh Gupta",
+            "icon_link": "https://link-to-icon-12.jpg"
+          },
+          {
+            "id": 13,
+            "name": "Data Science Fundamentals",
+            "date": "25 Apr",
+            "time": "10:00 AM to 12:00 PM",
+            "details": "This workshop will provide an introduction to data science, including data analysis, machine learning, and data visualization.",
+            "instructor": "John Wick",
+            "icon_link": "https://link-to-icon-13.jpg"
+          },
+          {
+            "id": 14,
+            "name": "Full-Stack Web Development with Node.js",
+            "date": "30 Apr",
+            "time": "02:00 PM to 04:00 PM",
+            "details": "In this workshop, students will learn how to build full-stack web applications using Node.js. Topics covered include server-side JavaScript, the Express.js framework, and the MongoDB database.",
+            "instructor": "Martin Luther",
+            "icon_link": "https://link-to-icon-14.jpg"
+          },
+          {
+            "id": 15,
+            "name": "Introduction to Cybersecurity",
+            "date": "5 May",
+            "time": "10:00 AM to 12:00 PM",
+            "details": "This workshop will provide an overview of cybersecurity, including network security, application security, and data security.",
+            "instructor": "Elizabeth",
+            "icon_link": "https://link-to-icon-15.jpg"
+          },
+          {
+            "id": 16,
+            "name": "Robotics Fundamentals",
+            "date": "10 May",
+            "time": "02:00 PM to 04:00 PM",
+            "details": "In this workshop, students will learn the basics of robotics, including robot mechanics, electronics, and programming.",
+            "instructor": "Sampson. Smith",
+            "icon_link": "https://link-to-icon-16.jpg"
+          },
+          {
+            "id": 17,
+            "name": "Virtual Reality Development",
+            "date": "15 May",
+            "time": "10:00 AM to 12:00 PM",
+            "details": "This workshop will provide an introduction to virtual reality development, including VR hardware, VR software, and VR user experience design.",
+            "instructor": "Smith S.",
+            "icon_link": "https://link-to-icon-17.jpg"
+          },
+          {
+            "id": 18,
+            "name": "Augmented Reality Development",
+            "date": "20 May",
+            "time": "02:00 PM to 04:00 PM",
+            "details": "In this workshop, students will learn how to build augmented reality applications, including AR hardware, AR software, and AR user experience design.",
+            "instructor": "Siemens",
+            "icon_link": "https://link-to-icon-18.jpg"
+          },
+          {
+            "id": 19,
+            "name": "Artificial Intelligence Fundamentals",
+            "date": "25 May",
+            "time": "10:00 AM to 12:00 PM",
+            "details": "This workshop will provide an introduction to artificial intelligence, including machine learning, deep learning, and computer vision.",
+            "instructor": "Joe",
+            "icon_link": "https://link-to-icon-19.jpg"
+          },
+          {
+            "id": 20,
+            "name": "Natural Language Processing Fundamentals",
+            "date": "30 May",
+            "time": "02:00 PM to 04:00 PM",
+            "details": "In this workshop, students will learn the basics of natural language processing, including text classification, text generation, and sentiment analysis.",
+            "instructor": "Akshay Khanna",
+            "icon_link": "https://link-to-icon-20.jpg"
+          }
+        ]
+        
+        
+        
+        
