@@ -1,6 +1,6 @@
 package com.example.workshopapp.adapter
 
-import android.util.Log
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,12 +11,13 @@ import com.example.workshopapp.dB.WorkshopDatabase
 import com.example.workshopapp.databinding.ItemWorkshopBinding
 import com.example.workshopapp.listener.Listener
 import com.example.workshopapp.models.WorkshopListItem
+import com.example.workshopapp.sharedPreference.SavedDataPreference
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class WorkshopAdapter(val listener: Listener, val database: WorkshopDatabase): ListAdapter<WorkshopListItem, WorkshopAdapter.MyViewHolder> (diffUtil()){
+class WorkshopAdapter(val listener: Listener, val database: WorkshopDatabase, var savedDataPreference: SavedDataPreference, val context: Context): ListAdapter<WorkshopListItem, WorkshopAdapter.MyViewHolder> (diffUtil()){
 
     inner class MyViewHolder(val binding: ItemWorkshopBinding): RecyclerView.ViewHolder(binding.root)
 
@@ -53,10 +54,12 @@ class WorkshopAdapter(val listener: Listener, val database: WorkshopDatabase): L
 //                }
 
             val name = currentItem.name
+            savedDataPreference = SavedDataPreference(context)
+            currentItem.userId = savedDataPreference.getUserId()!!
 
             CoroutineScope(Dispatchers.IO).launch {
 
-                if (database.workshopDao().searchItem(name) >= 1) {
+                if (database.workshopDao().searchItem(name, currentItem.userId) >= 1) {
                     withContext(Dispatchers.Main) {
                         applyBtn.post {
                             applyBtn.visibility = View.GONE

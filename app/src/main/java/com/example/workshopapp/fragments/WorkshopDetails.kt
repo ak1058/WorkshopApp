@@ -1,6 +1,7 @@
 package com.example.workshopapp.fragments
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import com.example.workshopapp.dB.WorkshopDatabase
 import com.example.workshopapp.databinding.FragmentWorkshopDetailsBinding
 import com.example.workshopapp.models.WorkshopListItem
 import com.example.workshopapp.sharedPreference.SavedDataPreference
+import com.google.firebase.auth.FirebaseAuth
 import com.google.gson.Gson
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -22,6 +24,7 @@ class WorkshopDetails : Fragment() {
     private lateinit var binding: FragmentWorkshopDetailsBinding
     private lateinit var savedDataPreference: SavedDataPreference
     private lateinit var workshopDatabase: WorkshopDatabase
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,6 +34,7 @@ class WorkshopDetails : Fragment() {
         binding = FragmentWorkshopDetailsBinding.inflate(inflater, container, false)
         savedDataPreference = SavedDataPreference(requireActivity())
         workshopDatabase = WorkshopDatabase.getDataBase(requireActivity())
+        firebaseAuth = FirebaseAuth.getInstance()
 
         val shouldHideButton = arguments?.getBoolean("shouldHideButton") ?: false
 
@@ -39,7 +43,9 @@ class WorkshopDetails : Fragment() {
         //parsing it and getting the workshopDAta which is clicked
         val workshopData = Gson().fromJson(jsonWorkshopData, WorkshopListItem::class.java)
         setWorkshopData(workshopData)
-
+        workshopData.userId = savedDataPreference.getUserId()!!
+        Log.d("addd", workshopData.userId)
+        Log.d("addd1", savedDataPreference.getUserId()!!)
         if (shouldHideButton){
             binding.applyBtn.visibility = View.GONE
         }

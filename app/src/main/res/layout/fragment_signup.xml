@@ -87,6 +87,7 @@
             app:boxBackgroundColor="?attr/colorSurface"
             android:layout_marginTop="16dp"
             android:hint="@string/password"
+            app:endIconMode="password_toggle"
             app:startIconDrawable="@drawable/password_icon">
 
             <com.google.android.material.textfield.TextInputEditText

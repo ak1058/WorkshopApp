@@ -55,6 +55,7 @@ class SignUpFragment : Fragment() {
         if (email.isNotEmpty()&&password.isNotEmpty()){
             auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
                 if (it.isSuccessful){
+                    savedDataPreference.saveUserId(auth.currentUser!!.uid)
                     val intent = Intent(activity, MainActivity::class.java)
                     startActivity(intent)
                     requireActivity().finish()

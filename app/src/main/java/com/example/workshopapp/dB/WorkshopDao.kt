@@ -12,13 +12,13 @@ interface WorkshopDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertItemIfNotExists(item: WorkshopListItem)
 
-    @Query("SELECT COUNT(*) FROM workshops WHERE name = :workshopName")
-    suspend fun searchItem(workshopName: String): Int
+    @Query("SELECT COUNT(*) FROM workshops WHERE name = :workshopName AND userId = :userId")
+    suspend fun searchItem(workshopName: String, userId: String): Int
 
-    @Query(value = "SELECT * FROM workshops")
-    suspend fun getWorkshops(): List<WorkshopListItem>
+    @Query(value = "SELECT * FROM workshops WHERE userId  = :userId")
+    suspend fun getWorkshops(userId: String): List<WorkshopListItem>
 
-    @Query("SELECT COUNT(*) FROM workshops")
-    suspend fun getWorkshopCount(): Int
+    @Query("SELECT COUNT(*) FROM workshops WHERE userId  = :userId")
+    suspend fun getWorkshopCount(userId: String): Int
 
 }

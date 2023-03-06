@@ -40,12 +40,12 @@ class AppliedWorkshopFragment : Fragment(), Listener {
         workshopDatabase = WorkshopDatabase.getDataBase(requireActivity())
 
         CoroutineScope(Dispatchers.IO).launch {
-            val appliedWorkshopList = workshopDatabase.workshopDao().getWorkshops()
+            val appliedWorkshopList = workshopDatabase.workshopDao().getWorkshops(savedDataPreference.getUserId()!!)
             workshopAdapter.submitList(appliedWorkshopList)
         }
 
         CoroutineScope(Dispatchers.IO).launch {
-            val count = workshopDatabase.workshopDao().getWorkshopCount()
+            val count = workshopDatabase.workshopDao().getWorkshopCount(savedDataPreference.getUserId()!!)
             withContext(Dispatchers.Main) {
                 if (count == 0) {
                     binding.arrow.visibility = View.VISIBLE

@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.workshopapp.R
 import com.example.workshopapp.activities.MainActivity
 import com.example.workshopapp.databinding.FragmentLoginBinding
+import com.example.workshopapp.sharedPreference.SavedDataPreference
 import com.google.firebase.auth.FirebaseAuth
 
 
@@ -18,6 +19,7 @@ class LoginFragment : Fragment() {
 
     private lateinit var binding: FragmentLoginBinding
     private lateinit var auth: FirebaseAuth
+    private lateinit var savedDataPreference: SavedDataPreference
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,6 +30,7 @@ class LoginFragment : Fragment() {
         binding = FragmentLoginBinding.inflate(inflater, container, false)
 
         auth = FirebaseAuth.getInstance()
+        savedDataPreference = SavedDataPreference(requireActivity())
 
         binding.dontHaveAccountRegister.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_signUpFragment)
@@ -56,6 +59,7 @@ class LoginFragment : Fragment() {
                     startActivity(intent)
                     requireActivity().finish()
                     binding.progressBar.visibility = View.GONE
+                    savedDataPreference.saveUserId(auth.currentUser!!.uid)
                 }
             }.addOnFailureListener {
                 showMessage(it.localizedMessage)

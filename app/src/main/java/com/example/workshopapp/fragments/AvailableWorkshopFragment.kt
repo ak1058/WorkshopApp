@@ -43,7 +43,8 @@ class AvailableWorkshopFragment : Fragment(), Listener {
 
         binding = FragmentAvailableWorkshopBinding.inflate(inflater, container, false)
         workshopDatabase = WorkshopDatabase.getDataBase(requireActivity())
-        workshopAdapter = WorkshopAdapter(this, workshopDatabase)
+        savedDataPreference = SavedDataPreference(requireActivity())
+        workshopAdapter = WorkshopAdapter(this, workshopDatabase, savedDataPreference, requireActivity())
         workshopViewModel = (activity as MainActivity).workshopViewModel
         savedDataPreference = SavedDataPreference(requireContext())
         auth = FirebaseAuth.getInstance()

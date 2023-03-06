@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 data class WorkshopListItem(
     @PrimaryKey
     val id: Int,
+    var userId: String,
     val instructor: String,
     val date: String,
     val details: String,

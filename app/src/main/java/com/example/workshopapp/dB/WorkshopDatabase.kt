@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.workshopapp.models.WorkshopListItem
 
-@Database(entities = [WorkshopListItem::class], version = 2)
+@Database(entities = [WorkshopListItem::class], version = 1)
 abstract class WorkshopDatabase: RoomDatabase() {
 
     abstract fun workshopDao(): WorkshopDao
